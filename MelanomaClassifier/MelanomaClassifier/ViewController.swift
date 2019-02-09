@@ -17,21 +17,12 @@ class ViewController: UIViewController{
     var captureSession: AVCaptureSession?
     var videoPreviewLayer: AVCaptureVideoPreviewLayer?
 
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let captureDevice = AVCaptureDevice.default(for: .video)
-        
-        /*do {
-            let input = try AVCaptureDeviceInput(device: captureDevice!)
-            captureSession = AVCaptureSession()
-            captureSession?.addInput(input)
-            captureSession?.startRunning()
-        } catch {
-            print(error)
-        }*/
         fetchMelanomaImage()
-
         
     }
 
