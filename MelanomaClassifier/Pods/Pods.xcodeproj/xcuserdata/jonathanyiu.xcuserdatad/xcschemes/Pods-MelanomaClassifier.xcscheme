@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D9B15DD9525268ED66AAB8B311E1265B"
+               BlueprintIdentifier = "5A088565BB41B429F9B61871AE51459C"
                BuildableName = "Pods_MelanomaClassifier.framework"
                BlueprintName = "Pods-MelanomaClassifier"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D9B15DD9525268ED66AAB8B311E1265B"
+            BlueprintIdentifier = "5A088565BB41B429F9B61871AE51459C"
             BuildableName = "Pods_MelanomaClassifier.framework"
             BlueprintName = "Pods-MelanomaClassifier"
             ReferencedContainer = "container:Pods.xcodeproj">

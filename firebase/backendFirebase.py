@@ -33,11 +33,12 @@ def stream_handler(message):
             # DO STUFF WITH URL HERE
             print(url)
             # SEND RESULTS WITH send_results HERE
+            strID = urlItem.key() # <-- This is the ID to put in the send_results parameter
 
 # Listens for changes in URL bucket
 def urlListener():
     my_stream = db.child("urls").stream(stream_handler)
 
 # upload_image("sausage.jpg")
-send_results("randomID", "M75%")
+send_results("otherID", "M73%")
 urlListener()
