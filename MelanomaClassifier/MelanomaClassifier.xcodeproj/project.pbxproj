@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E96EF82220F80F5005780B7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E96EF81220F80F5005780B7 /* GoogleService-Info.plist */; };
+		3354BB3AC2E9F44740C45881 /* Pods_MelanomaClassifierUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467A3D2B24CF5748D45BB018 /* Pods_MelanomaClassifierUITests.framework */; };
+		ABC6E613B1C8FBDD3A72031A /* Pods_MelanomaClassifier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35896B86786E791B09AC1ADC /* Pods_MelanomaClassifier.framework */; };
+		D381B437B868313BFE5CD1AA /* Pods_MelanomaClassifierTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955481C0C07F11341F283637 /* Pods_MelanomaClassifierTests.framework */; };
 		E24F214A220F15C400A89DC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F2149220F15C400A89DC4 /* AppDelegate.swift */; };
 		E24F214C220F15C400A89DC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F214B220F15C400A89DC4 /* ViewController.swift */; };
 		E24F214F220F15C400A89DC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E24F214D220F15C400A89DC4 /* Main.storyboard */; };
@@ -34,6 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04AD684A7F06F0B4AD028A91 /* Pods-MelanomaClassifierTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MelanomaClassifierTests.debug.xcconfig"; path = "Target Support Files/Pods-MelanomaClassifierTests/Pods-MelanomaClassifierTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E96EF81220F80F5005780B7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		35896B86786E791B09AC1ADC /* Pods_MelanomaClassifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MelanomaClassifier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		467A3D2B24CF5748D45BB018 /* Pods_MelanomaClassifierUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MelanomaClassifierUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A91A9C62FF57AB3787DEFF0 /* Pods-MelanomaClassifier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MelanomaClassifier.release.xcconfig"; path = "Target Support Files/Pods-MelanomaClassifier/Pods-MelanomaClassifier.release.xcconfig"; sourceTree = "<group>"; };
+		7488542A70EBFF07A68467D9 /* Pods-MelanomaClassifierUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MelanomaClassifierUITests.debug.xcconfig"; path = "Target Support Files/Pods-MelanomaClassifierUITests/Pods-MelanomaClassifierUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		94739D4C45B8CE9300B7911C /* Pods-MelanomaClassifier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MelanomaClassifier.debug.xcconfig"; path = "Target Support Files/Pods-MelanomaClassifier/Pods-MelanomaClassifier.debug.xcconfig"; sourceTree = "<group>"; };
+		955481C0C07F11341F283637 /* Pods_MelanomaClassifierTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MelanomaClassifierTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98A9A8F43D577541FE8A92C9 /* Pods-MelanomaClassifierTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MelanomaClassifierTests.release.xcconfig"; path = "Target Support Files/Pods-MelanomaClassifierTests/Pods-MelanomaClassifierTests.release.xcconfig"; sourceTree = "<group>"; };
 		E24F2146220F15C400A89DC4 /* MelanomaClassifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MelanomaClassifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E24F2149220F15C400A89DC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E24F214B220F15C400A89DC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -47,6 +60,7 @@
 		E24F2165220F15C600A89DC4 /* MelanomaClassifierUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MelanomaClassifierUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E24F2169220F15C600A89DC4 /* MelanomaClassifierUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelanomaClassifierUITests.swift; sourceTree = "<group>"; };
 		E24F216B220F15C600A89DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F495E4F04803FE14A166A7CF /* Pods-MelanomaClassifierUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MelanomaClassifierUITests.release.xcconfig"; path = "Target Support Files/Pods-MelanomaClassifierUITests/Pods-MelanomaClassifierUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABC6E613B1C8FBDD3A72031A /* Pods_MelanomaClassifier.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D381B437B868313BFE5CD1AA /* Pods_MelanomaClassifierTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +84,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3354BB3AC2E9F44740C45881 /* Pods_MelanomaClassifierUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A879E9ED1FD883AD27406153 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94739D4C45B8CE9300B7911C /* Pods-MelanomaClassifier.debug.xcconfig */,
+				5A91A9C62FF57AB3787DEFF0 /* Pods-MelanomaClassifier.release.xcconfig */,
+				04AD684A7F06F0B4AD028A91 /* Pods-MelanomaClassifierTests.debug.xcconfig */,
+				98A9A8F43D577541FE8A92C9 /* Pods-MelanomaClassifierTests.release.xcconfig */,
+				7488542A70EBFF07A68467D9 /* Pods-MelanomaClassifierUITests.debug.xcconfig */,
+				F495E4F04803FE14A166A7CF /* Pods-MelanomaClassifierUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AD1A71FF9DDD194EE4315C6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35896B86786E791B09AC1ADC /* Pods_MelanomaClassifier.framework */,
+				955481C0C07F11341F283637 /* Pods_MelanomaClassifierTests.framework */,
+				467A3D2B24CF5748D45BB018 /* Pods_MelanomaClassifierUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E24F213D220F15C400A89DC4 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +121,8 @@
 				E24F215D220F15C600A89DC4 /* MelanomaClassifierTests */,
 				E24F2168220F15C600A89DC4 /* MelanomaClassifierUITests */,
 				E24F2147220F15C400A89DC4 /* Products */,
+				A879E9ED1FD883AD27406153 /* Pods */,
+				AD1A71FF9DDD194EE4315C6A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +144,7 @@
 				E24F214D220F15C400A89DC4 /* Main.storyboard */,
 				E24F2150220F15C500A89DC4 /* Assets.xcassets */,
 				E24F2152220F15C500A89DC4 /* LaunchScreen.storyboard */,
+				2E96EF81220F80F5005780B7 /* GoogleService-Info.plist */,
 				E24F2155220F15C500A89DC4 /* Info.plist */,
 			);
 			path = MelanomaClassifier;
@@ -132,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E24F216E220F15C600A89DC4 /* Build configuration list for PBXNativeTarget "MelanomaClassifier" */;
 			buildPhases = (
+				CF258A0B8CD20AC660D14E8E /* [CP] Check Pods Manifest.lock */,
 				E24F2142220F15C400A89DC4 /* Sources */,
 				E24F2143220F15C400A89DC4 /* Frameworks */,
 				E24F2144220F15C400A89DC4 /* Resources */,
+				549E393B4BFC947939A33687 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E24F2171220F15C600A89DC4 /* Build configuration list for PBXNativeTarget "MelanomaClassifierTests" */;
 			buildPhases = (
+				8D04D02F16F7D8731235C570 /* [CP] Check Pods Manifest.lock */,
 				E24F2156220F15C600A89DC4 /* Sources */,
 				E24F2157220F15C600A89DC4 /* Frameworks */,
 				E24F2158220F15C600A89DC4 /* Resources */,
@@ -167,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E24F2174220F15C600A89DC4 /* Build configuration list for PBXNativeTarget "MelanomaClassifierUITests" */;
 			buildPhases = (
+				51E11B6884DE90B71035EDE1 /* [CP] Check Pods Manifest.lock */,
 				E24F2161220F15C600A89DC4 /* Sources */,
 				E24F2162220F15C600A89DC4 /* Frameworks */,
 				E24F2163220F15C600A89DC4 /* Resources */,
@@ -233,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E24F2154220F15C500A89DC4 /* LaunchScreen.storyboard in Resources */,
+				2E96EF82220F80F5005780B7 /* GoogleService-Info.plist in Resources */,
 				E24F2151220F15C500A89DC4 /* Assets.xcassets in Resources */,
 				E24F214F220F15C400A89DC4 /* Main.storyboard in Resources */,
 			);
@@ -253,6 +301,101 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51E11B6884DE90B71035EDE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MelanomaClassifierUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		549E393B4BFC947939A33687 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MelanomaClassifier/Pods-MelanomaClassifier-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MelanomaClassifier/Pods-MelanomaClassifier-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D04D02F16F7D8731235C570 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MelanomaClassifierTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF258A0B8CD20AC660D14E8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MelanomaClassifier-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E24F2142220F15C400A89DC4 /* Sources */ = {
@@ -431,6 +574,7 @@
 		};
 		E24F216F220F15C600A89DC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94739D4C45B8CE9300B7911C /* Pods-MelanomaClassifier.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -451,6 +595,7 @@
 		};
 		E24F2170220F15C600A89DC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A91A9C62FF57AB3787DEFF0 /* Pods-MelanomaClassifier.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -471,6 +616,7 @@
 		};
 		E24F2172220F15C600A89DC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04AD684A7F06F0B4AD028A91 /* Pods-MelanomaClassifierTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +637,7 @@
 		};
 		E24F2173220F15C600A89DC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98A9A8F43D577541FE8A92C9 /* Pods-MelanomaClassifierTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +658,7 @@
 		};
 		E24F2175220F15C600A89DC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7488542A70EBFF07A68467D9 /* Pods-MelanomaClassifierUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +678,7 @@
 		};
 		E24F2176220F15C600A89DC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F495E4F04803FE14A166A7CF /* Pods-MelanomaClassifierUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

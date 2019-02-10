@@ -15,7 +15,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
             endingLineNumber = "34"
-            landmarkName = "fetchMelanomaImage()"
+            landmarkName = "makeAPICall()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
