@@ -9,21 +9,17 @@
 import UIKit
 import AVFoundation
 import Foundation
+import MobileCoreServices
+import Photos
+//import Firebase
+//import FirebaseStorage
 
-class ViewController: UIViewController{
-    
-    @IBOutlet weak var previewView: UIView!
-    
-    var captureSession: AVCaptureSession?
-    var videoPreviewLayer: AVCaptureVideoPreviewLayer?
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
-    @IBOutlet weak var imageView: UIImageView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         fetchMelanomaImage()
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,7 +28,7 @@ class ViewController: UIViewController{
     }
     
     func fetchMelanomaImage(){
-        let url = URL(string: "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY") // change this URL
+        let url = URL(string: "") // change this URL
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if let data = data {
                 do {
@@ -56,4 +52,27 @@ class ViewController: UIViewController{
         // Only necessary if you are testing in the command line.
         RunLoop.main.run()
     }
+    
+    @IBOutlet weak var myImageView: UIImageView!
+    @IBAction func selectPhoto(_ sender: Any) {
+        let image = UIImagePickerController()
+        image.delegate = self
+        image.sourceType = UIImagePickerController.SourceType.photoLibrary
+        image.allowsEditing = false
+        self.present(image, animated: true){
+            // after it is complete
+        }
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
+            myImageView.image = image
+        }
+        else{
+            // Error message
+        }
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }
+

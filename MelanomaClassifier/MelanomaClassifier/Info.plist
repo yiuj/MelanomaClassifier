@@ -8,7 +8,9 @@
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>This app needs your camera</string>
+	<string>This app would like access to your camera</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app would like access to your photo</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
