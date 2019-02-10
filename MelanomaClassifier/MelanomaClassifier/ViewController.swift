@@ -31,23 +31,57 @@ class ViewController: UIViewController{
         // Dispose of any resources that can be recreated.
     }
     
+    func makeAPICall() {
+        
+        let targetURL = URL(string: "http://127.0.0.1:5000/")
+        let request = NSURLRequest(URL: targetURL) //this is the line with error.
+        webView.loadRequest(request)
+    }
+    
     func fetchMelanomaImage(){
-        let url = URL(string: "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY") // change this URL
-        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
-            if let data = data {
-                do {
-                    // Convert the data to JSON
-                    let jsonSerialized = try JSONSerialization.jsonObject(with: data, options: []) as? [String : Any]
-                    
-                    if let json = jsonSerialized, let url = json["url"], let explanation = json["explanation"] {
-                        print(url)
-                        print(explanation)
-                    }
-                }  catch let error as NSError {
-                    print(error.localizedDescription)
+        let todosEndpoint: String = "http://127.0.0.1:5000/"
+        guard let todosURL = URL(string: todosEndpoint) else {
+            print("Error: cannot create URL")
+            return
+        }
+        var todosUrlRequest = URLRequest(url: todosURL)
+        todosUrlRequest.httpMethod = "POST"
+        let newTodo: [String: Any] = ["title": "My First todo", "completed": false, "userId": 1]
+        let jsonTodo: Data
+        do {
+            jsonTodo = try JSONSerialization.data(withJSONObject: newTodo, options: [])
+            todosUrlRequest.httpBody = jsonTodo
+        } catch {
+            print("Error: cannot create JSON from todo")
+            return
+        }
+        
+        let session = URLSession.shared
+        
+        let task = session.dataTask(with: todosUrlRequest) {
+            (data, response, error) in
+            guard error == nil else {
+                print("error calling POST on /todos/1")
+                print(error)
+                return
+            }
+            guard let responseData = data else {
+                print("Error: did not receive data")
+                return
+            }
+            
+            // parse the result as JSON, since that's what the API provides
+            do {
+                guard let receivedTodo = try JSONSerialization.jsonObject(with: responseData,
+                                                                          options: []) as? [String: Any] else {
+                                                                            print("Could not get JSON from responseData as dictionary")
+                                                                            return
                 }
-            } else if let error = error {
-                print(error.localizedDescription)
+                print(receivedTodo)
+                
+            } catch  {
+                print("error parsing response from POST on /todos")
+                return
             }
         }
         task.resume()
