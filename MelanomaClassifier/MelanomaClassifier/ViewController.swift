@@ -47,7 +47,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         kevinsRef.observe(.value, with: {(snapshot) in
             for child in snapshot.children {
                 if child is DataSnapshot {
-                    print(((child as! DataSnapshot).value!))
+                    let id = (((child as! DataSnapshot).value!) as! NSDictionary)["id"]!
+                    let results = (((child as! DataSnapshot).value!) as! NSDictionary)["results"]!
+                    print(id)
+                    print(results)
                 }
                 else {
                     print("NOT A DATA SNAPSHOT")
