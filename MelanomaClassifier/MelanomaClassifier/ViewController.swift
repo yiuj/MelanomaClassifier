@@ -11,27 +11,63 @@ import AVFoundation
 import Foundation
 import MobileCoreServices
 import Photos
-//import Firebase
-//import FirebaseStorage
+import Firebase
+import FirebaseStorage
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
+    @IBOutlet weak var imagePicked: UIImageView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        fetchMelanomaImage()
+        //fetchMelanomaImage()
+        
+        
+        
+        let uuid = UUID().uuidString
+        NSLog(uuid)
+        
+        FirebaseApp.configure()
+        let storage = Storage.storage(url:"gs://skincheck-6d167.appspot.com")
+        let storageRef = storage.reference()
+        
+        // Points to "images"
+        let imagesRef = storageRef.child("images")
+        
+        // Points to "images/space.jpg"
+        // Note that you can use variables to create child values
+        let fileName = "faf701c4-f917-4ba3-95ad-9b17a24bf4d8.jpg"
+        let sausageRef = imagesRef.child(fileName)
+        
+        // File path is "images/space.jpg"
+        let path = sausageRef.fullPath;
+        
+        // File name is "space.jpg"
+        let name = sausageRef.name;
+        
+        // Points to "images"
+        let images = sausageRef.parent()
+        
+        
     }
 
+    
+    @IBAction func openPhotoLibraryButton(_ sender: Any) {
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            var imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = .photoLibrary;
+            imagePicker.allowsEditing = true
+            self.present(imagePicker, animated: true, completion: nil)
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    func makeAPICall() {
-        
-        let targetURL = URL(string: "http://127.0.0.1:5000/")
-        let request = NSURLRequest(URL: targetURL) //this is the line with error.
-        webView.loadRequest(request)
     }
     
     func fetchMelanomaImage(){
@@ -49,7 +85,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 }  catch let error as NSError {
                     print(error.localizedDescription)
                 }
-                print(receivedTodo)
             } else if let error = error {
                 print(error.localizedDescription)
                 return

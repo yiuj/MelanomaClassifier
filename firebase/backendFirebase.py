@@ -32,7 +32,7 @@ def stream_handler(message):
             urlset.update(s)
             # DO STUFF WITH URL HERE
             print(url)
-            # SEND RESULTS WITH send_results
+            # SEND RESULTS WITH send_results HERE
 
 # Listens for changes in URL bucket
 def urlListener():

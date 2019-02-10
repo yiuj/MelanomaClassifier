@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E96EF82220F80F5005780B7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E96EF81220F80F5005780B7 /* GoogleService-Info.plist */; };
 		3354BB3AC2E9F44740C45881 /* Pods_MelanomaClassifierUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467A3D2B24CF5748D45BB018 /* Pods_MelanomaClassifierUITests.framework */; };
 		ABC6E613B1C8FBDD3A72031A /* Pods_MelanomaClassifier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35896B86786E791B09AC1ADC /* Pods_MelanomaClassifier.framework */; };
 		D381B437B868313BFE5CD1AA /* Pods_MelanomaClassifierTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955481C0C07F11341F283637 /* Pods_MelanomaClassifierTests.framework */; };
@@ -18,6 +17,7 @@
 		E24F2154220F15C500A89DC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E24F2152220F15C500A89DC4 /* LaunchScreen.storyboard */; };
 		E24F215F220F15C600A89DC4 /* MelanomaClassifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F215E220F15C600A89DC4 /* MelanomaClassifierTests.swift */; };
 		E24F216A220F15C600A89DC4 /* MelanomaClassifierUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F2169220F15C600A89DC4 /* MelanomaClassifierUITests.swift */; };
+		E2DC2BED220FF56F00200E60 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2DC2BEC220FF56F00200E60 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 
 /* Begin PBXFileReference section */
 		04AD684A7F06F0B4AD028A91 /* Pods-MelanomaClassifierTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MelanomaClassifierTests.debug.xcconfig"; path = "Target Support Files/Pods-MelanomaClassifierTests/Pods-MelanomaClassifierTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2E96EF81220F80F5005780B7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		35896B86786E791B09AC1ADC /* Pods_MelanomaClassifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MelanomaClassifier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		467A3D2B24CF5748D45BB018 /* Pods_MelanomaClassifierUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MelanomaClassifierUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A91A9C62FF57AB3787DEFF0 /* Pods-MelanomaClassifier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MelanomaClassifier.release.xcconfig"; path = "Target Support Files/Pods-MelanomaClassifier/Pods-MelanomaClassifier.release.xcconfig"; sourceTree = "<group>"; };
@@ -60,6 +59,7 @@
 		E24F2165220F15C600A89DC4 /* MelanomaClassifierUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MelanomaClassifierUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E24F2169220F15C600A89DC4 /* MelanomaClassifierUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelanomaClassifierUITests.swift; sourceTree = "<group>"; };
 		E24F216B220F15C600A89DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2DC2BEC220FF56F00200E60 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F495E4F04803FE14A166A7CF /* Pods-MelanomaClassifierUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MelanomaClassifierUITests.release.xcconfig"; path = "Target Support Files/Pods-MelanomaClassifierUITests/Pods-MelanomaClassifierUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,12 +139,12 @@
 		E24F2148220F15C400A89DC4 /* MelanomaClassifier */ = {
 			isa = PBXGroup;
 			children = (
+				E2DC2BEC220FF56F00200E60 /* GoogleService-Info.plist */,
 				E24F2149220F15C400A89DC4 /* AppDelegate.swift */,
 				E24F214B220F15C400A89DC4 /* ViewController.swift */,
 				E24F214D220F15C400A89DC4 /* Main.storyboard */,
 				E24F2150220F15C500A89DC4 /* Assets.xcassets */,
 				E24F2152220F15C500A89DC4 /* LaunchScreen.storyboard */,
-				2E96EF81220F80F5005780B7 /* GoogleService-Info.plist */,
 				E24F2155220F15C500A89DC4 /* Info.plist */,
 			);
 			path = MelanomaClassifier;
@@ -280,7 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E24F2154220F15C500A89DC4 /* LaunchScreen.storyboard in Resources */,
-				2E96EF82220F80F5005780B7 /* GoogleService-Info.plist in Resources */,
+				E2DC2BED220FF56F00200E60 /* GoogleService-Info.plist in Resources */,
 				E24F2151220F15C500A89DC4 /* Assets.xcassets in Resources */,
 				E24F214F220F15C400A89DC4 /* Main.storyboard in Resources */,
 			);
